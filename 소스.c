@@ -1,13 +1,15 @@
 #include <stdio.h>
 
-void DrawStarLine(int StarCount)
+void DrawStarLine(int starCount)
 {
-	for (int i = 0; i < StarCount; i++)
+	for (int i = 0; i < starCount; i++)
 		printf("*");
 }
 
 int main(void)
 {
-	DrawStarLine(10);
+	int input;
+	scanf_s("%d", &input);
+	DrawStarLine(input);
 	return 0;
 }
