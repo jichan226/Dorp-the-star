@@ -2,5 +2,8 @@
 
 int main(void)
 {
-	printf("*");
+	int star;
+	scanf_s("%d", &star);
+	for (int i = 0; i < star; i++)
+		printf("*");
 }
