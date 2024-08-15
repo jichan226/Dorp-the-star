@@ -9,17 +9,16 @@ void DrawStarLine(int starCount)
 void DrawStarSquare(int starCount, int starLine)
 {
 	for (int i = 0; i < starLine; i++)
-		for (int k = 0; k < starCount; k++)
+		for (int j = 0; j < starCount; j++)
 			printf("*");
 }
 
 int main(void)
 {
-	int input;
-	scanf_s("%d", &input);
+	int starCount;
+	scanf_s("%d", &starCount);
 
-	DrawStarLine(input);
+	DrawStarLine(starCount);
 
 	return 0;
 }
-
