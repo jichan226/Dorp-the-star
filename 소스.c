@@ -6,9 +6,11 @@ void DrawStarLine(int starCount)
 		printf("*");
 }
 
-void DrawStarSquare()
+void DrawStarSquare(int starCount, int starLine)
 {
-
+	for (int i = 0; i < starLine; i++)
+		for (int k = 0; k < starCount; k++)
+			printf("*");
 }
 
 int main(void)
@@ -20,3 +22,4 @@ int main(void)
 
 	return 0;
 }
+
