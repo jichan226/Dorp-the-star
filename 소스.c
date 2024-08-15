@@ -11,7 +11,7 @@ void DrawStarLine(int starCount)
 void DrawStarSquare(int starCount, int starLine)
 {
 	for (int j = 0; j < starLine; j++)
-	DrawStarLine(starCount);
+		DrawStarLine(starCount);
 }
 
 int main(void)
