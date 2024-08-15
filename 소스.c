@@ -6,10 +6,17 @@ void DrawStarLine(int starCount)
 		printf("*");
 }
 
+void DrawStarSquare()
+{
+
+}
+
 int main(void)
 {
 	int input;
 	scanf_s("%d", &input);
+
 	DrawStarLine(input);
+
 	return 0;
 }
