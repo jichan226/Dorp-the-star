@@ -1,15 +1,23 @@
 #include <stdio.h>
 
-void drow_star_line()
-{
-	int star;
-	scanf_s("%d", &star);
-	for (int i = 0; i < star; i++)
-		printf("*");
-}
-int main(void)
-{
-	drow_star_line();
-	return 0;
+void DrowStarLine()
 
+{
+	int StarCount;
+
+	scanf_s("%d", &StarCount);
+
+	for (int i = 0; i < StarCount; i++)
+
+		printf("*");
+
+}
+
+int main(void)
+
+{
+
+	DrowStarLine();
+
+	return 0;
 }
