@@ -16,14 +16,15 @@ void DrawStarJump(int starCount)
 	printf("\n");
 }
 
-void DrawStarMove(int  starCount, int movePosition)
+void DrawStarMove(int starCount, int stopPosition)
 {
 	printf("*");
 	for (int i = 0; i < starCount - 2; i++)
-		if (i != movePosition)
+		if (i != stopPosition)
 			printf(" ");
 		else
 			printf("*");
+
 	printf("*");
 	printf("\n");
 }
@@ -42,21 +43,21 @@ void DrawStarOutLine(int starCount, int starLine)
 	DrawStarLine(starCount);
 }
 
-void DrawStarPoint(int starCount, int starLine, int movePosition)
+void DrawStarPoint(int starCount, int starLine, int stopPosition)
 {
 	DrawStarLine(starCount);
 	DrawStarJump(starCount);
-	DrawStarMove(starCount, movePosition);
+	DrawStarMove(starCount, stopPosition);
 	DrawStarJump(starCount);
 	DrawStarLine(starCount);
 }
 
 int main(void)
 {
-	int starCount, starLine, movePosition;
-	scanf_s("%d %d %d", &starCount, &starLine, &movePosition);
+	int starCount, starLine, stopPosition;
+	scanf_s("%d %d %d", &starCount, &starLine, &stopPosition);
 
-	DrawStarPoint(starCount, starLine, movePosition);
+	DrawStarPoint(starCount, starLine, stopPosition);
 
 	return 0;
 }
