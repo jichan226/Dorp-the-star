@@ -20,8 +20,7 @@ void DrawStarMove(int  starCount, int movePosition)
 {
 	printf("*");
 	for (int i = 0; i < starCount - 2; i++) {
-		printf(" ");
-		if (movePosition = i)
+		if (i == movePosition)
 			printf("*");
 		else
 			printf(" ");
