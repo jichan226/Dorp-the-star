@@ -32,10 +32,11 @@ void DrawStarOutLine(int starCount, int starLine)
 
 void DrawStarPoint(int starCount, int starLine, int starPosition)
 {
-	printf("*****");
-	printf("*  **");
-	printf("*   *");
-	printf("*****");
+	printf("*******");
+	printf("*     *");
+	printf("*  *  *");
+	printf("*     *");
+	printf("*******");
 }
 
 int main(void)
