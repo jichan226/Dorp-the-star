@@ -25,8 +25,8 @@ void DrawStarSquare(int starCount, int starLine)
 void DrawStartOutLine(int starCount, int starLine)
 {
 	DrawStarLine(starCount);
-	DrawStarJump(starCount);
-	DrawStarJump(starCount);
+	for (int i = 0; i < starLine - 2; i++)
+		DrawStarJump(starCount);
 	DrawStarLine(starCount);
 }
 
