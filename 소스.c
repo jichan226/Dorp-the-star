@@ -26,6 +26,7 @@ void DrawStartOutLine(int starCount, int starLine)
 {
 	DrawStarLine(starCount);
 	DrawStarJump(starLine);
+	DrawStarJump(starLine);
 	DrawStarLine(starCount);
 }
 
