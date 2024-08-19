@@ -15,10 +15,10 @@ void DrawStarSquare(int starCount, int starLine)
 
 void DrawStartOutLine(int starCount, int starLine)
 {
-	printf("*****\n");
+	DrawStarLine(starCount);
 	printf("*   *\n");
 	printf("*   *\n");
-	printf("*****\n");
+	DrawStarLine(starCount);
 }
 
 int main(void)
