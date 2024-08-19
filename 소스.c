@@ -7,13 +7,13 @@ void DrawStarLine(int starCount)
 	printf("\n");
 }
 
-void DrawStarJump(int starLine)
+void DrawStarJump(int starCount)
 {
 	printf("*");
-	for (int i = 0; i < starLine - 2; i++)
+	for (int i = 0; i < starCount - 2; i++)
 		printf(" ");
-	printf("\n");
 	printf("*");
+	printf("\n");
 }
 
 void DrawStarSquare(int starCount, int starLine)
@@ -25,8 +25,8 @@ void DrawStarSquare(int starCount, int starLine)
 void DrawStartOutLine(int starCount, int starLine)
 {
 	DrawStarLine(starCount);
-	DrawStarJump(starLine);
-	DrawStarJump(starLine);
+	DrawStarJump(starCount);
+	DrawStarJump(starCount);
 	DrawStarLine(starCount);
 }
 
