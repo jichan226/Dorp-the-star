@@ -19,12 +19,11 @@ void DrawStarJump(int starCount)
 void DrawStarMove(int  starCount, int movePosition)
 {
 	printf("*");
-	for (int i = 0; i < starCount - 2; i++) {
-		if (i == movePosition)
-			printf("*");
-		else
+	for (int i = 0; i < starCount - 2; i++)
+		if (i = !movePosition)
 			printf(" ");
-	}
+		else
+			printf("*");
 	printf("*");
 	printf("\n");
 }
